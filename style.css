@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*=====================================================================================================================*/
 
 /*Nav-Bar*/
@@ -338,6 +342,30 @@
 /*Footer*/
 
 /*=====================================================================================================================*/
+
+.reveal{
+    position: relative;
+    transform: translateY(65px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal-home{
+    position: relative;
+    transform: translateY(65px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal-home.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 /*Media Queries*/
 @media (max-width: 830px) {

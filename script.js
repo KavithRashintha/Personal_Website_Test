@@ -27,6 +27,41 @@ readMore.addEventListener("click" , ()=>{
 })
 /*About*/
 
-$function()
+/*Elements Reveal*/
+
+window.onload = function (){
+    const pageAccessedByReload = (
+        (window.performance.navigation && window.performance.navigation.type === 1) || window.performance
+            .getEntriesByType('navigation')
+            .map((nav) => nav.type)
+            .includes('reload')
+    );
+
+    if(pageAccessedByReload){
+        let revealHome=document.getElementsByClassName("reveal-home")[0];
+
+        revealHome.classList.add('active');
+    }
+}
+
+window.addEventListener('scroll' , ()=>{
+    let reveals=document.querySelectorAll(".reveal");
+
+    for (let i=0; i<reveals.length; i++){
+        let windowHeight=window.innerHeight;
+        let revealTop=reveals[i].getBoundingClientRect().top;
+        let revealsPoint=120;
+
+        if(revealTop < windowHeight - revealsPoint){
+            reveals[i].classList.add('active');
+        }else{
+            reveals[i].classList.remove('active');
+        }
+    }
+});
+
+/*Elements Reveal*/
+
+
 
 
