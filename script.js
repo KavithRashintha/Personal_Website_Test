@@ -76,6 +76,12 @@ window.onload = function (){
     }
 }
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    let revealHome=document.getElementsByClassName("reveal-home")[0];
+
+    revealHome.classList.add('active');
+});
+
 window.addEventListener('scroll' , ()=>{
     let reveals=document.querySelectorAll(".reveal");
 
