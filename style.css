@@ -50,6 +50,7 @@ html {
 }
 .navigation ul li a{
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
 }
 .toggle-hamburger{
@@ -107,10 +108,11 @@ html {
     margin-top:7rem;
     font-size: 4.3rem;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     color: #487eb0;
 }
 .underline{
-    width: 69%;
+    width: 72%;
     border-bottom: 4px solid #3b7197c8;
     border-radius: 5px;
     margin:0 0 2rem 0.2rem;
@@ -143,7 +145,7 @@ html {
     align-items: center;
 }
 .follow-desc p{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     color: #487eb0;
@@ -185,11 +187,13 @@ html {
     align-items: center;
     border-radius: 10px;
     margin: 1.5rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     background-color: #44bd32;
     opacity: 0.9;
 }
 .about-header h1{
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     color: #ffff;
 }
@@ -242,11 +246,13 @@ html {
     align-items: center;
     border-radius: 10px;
     margin: 1rem 0 3rem 4rem;
+    padding: 0.5rem 0 0 0;
     background-color: #8c7ae6;
     opacity: 0.9;
 }
 .skills-header h1{
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     color: #ffff;
 }
@@ -304,11 +310,13 @@ html {
     align-items: center;
     border-radius: 10px;
     margin: 1.5rem 0 4rem 4rem;
+    padding: 0.5rem 0 0 0;
     background-color: #f39c12;
     opacity: 0.9;
 }
 .contact-header h1{
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     color: #ffff;
 }
@@ -347,7 +355,7 @@ html {
     padding:  0 0 0 1.5rem;
     width: 100%;
 }
-.submit-button button{
+.submit-button input{
     height: 2.5rem;
     padding: 0rem 1rem;
     color: white;
