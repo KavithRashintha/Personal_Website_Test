@@ -7,10 +7,38 @@ toggleHamburger.addEventListener("click" , ()=>{
 })
 /*Hamburger toggle*/
 
+/*Scrolling*/
+$("a").click(function(){
+    let pageId = $(this).attr("data-page");
+    $("html, body").animate({ scrollTop: $("#"+pageId).offset().top - 120}, 500);
+});
+/*Scrolling*/
+
+/*======================================================================================================================*/
+
+/*Home*/
+let textArray=["Follow Me On..."];
+let textPosition=0;
+let speed=100;
+
+typeWriter = ()=>{
+    document.querySelector("#follow-desc-p").innerHTML = textArray[0].substring(0 , textPosition);
+
+    if(textPosition++ != textArray[0].length){
+        setTimeout(typeWriter , speed);
+    }
+}
+typeWriter();
+
+/*Home*/
+
+/*======================================================================================================================*/
+
 /*About*/
 const readMore=document.getElementById("desc-button-wrap");
 const descSpan=document.getElementsByClassName("desc-span")[0];
 const skillsDev=document.getElementsByClassName("skills-left")[0];
+const contactDev=document.getElementsByClassName("contact")[0];
 
 readMore.addEventListener("click" , ()=>{
     descSpan.classList.toggle("active");
@@ -18,14 +46,18 @@ readMore.addEventListener("click" , ()=>{
     if(readMore.innerText=="Read Less"){
         readMore.innerText="Read More";
         skillsDev.style.margin="-10rem 0 0 0";
+        contactDev.style.margin="3rem 0 0 0";
     }else{
         readMore.innerText="Read Less";
         skillsDev.style.margin="10rem 0 0 0";
+        contactDev.style.margin="22rem 0 0 0";
     }
     readMore.style.color="white";
     readMore.style.fontSize="0.9rem";
 })
 /*About*/
+
+/*======================================================================================================================*/
 
 /*Elements Reveal*/
 
